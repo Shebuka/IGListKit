@@ -18,6 +18,13 @@
 		0A89290126CDA666003FABD8 /* IGListItemUpdatesCollector.h in Headers */ = {isa = PBXBuildFile; fileRef = 57B22E7C2502AAC40055DC2F /* IGListItemUpdatesCollector.h */; };
 		0A89290226CDA672003FABD8 /* IGListItemUpdatesCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = 57B22E752502AAC30055DC2F /* IGListItemUpdatesCollector.m */; };
 		0B3B93611E08E38C008390ED /* IGListBatchUpdateDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88144EE51D870EDC007C7F66 /* IGListBatchUpdateDataTests.m */; };
+		0D4915E02AAB16D300C4248E /* IGListDiffKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A02D01D2361520200B49FAE /* IGListDiffKit.framework */; };
+		0D4915E62AAB170700C4248E /* IGListDiffDescriptionStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F1855A4B29BC565600558D18 /* IGListDiffDescriptionStringTests.m */; };
+		0D4915E72AAB170700C4248E /* IGListDiffResultTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 294AC6311DDE4C19002FCE5D /* IGListDiffResultTests.m */; };
+		0D4915E82AAB170700C4248E /* IGListDiffSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88144EE61D870EDC007C7F66 /* IGListDiffSwiftTests.swift */; };
+		0D4915E92AAB170700C4248E /* IGListDiffTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88144EE81D870EDC007C7F66 /* IGListDiffTests.m */; };
+		0D4915EA2AAB174900C4248E /* IGTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 88144F001D870EDC007C7F66 /* IGTestObject.m */; };
+		0D4915EB2AAB199600C4248E /* IGListBatchUpdateDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88144EE51D870EDC007C7F66 /* IGListBatchUpdateDataTests.m */; };
 		13DF01731FA0FD400092A320 /* IGListTestAdapterReorderingDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DF01721FA0FD400092A320 /* IGListTestAdapterReorderingDataSource.m */; };
 		13DF01741FA0FD400092A320 /* IGListTestAdapterReorderingDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DF01721FA0FD400092A320 /* IGListTestAdapterReorderingDataSource.m */; };
 		13DF01771FA1000E0092A320 /* IGTestReorderableSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 13DF01761FA1000E0092A320 /* IGTestReorderableSection.m */; };
@@ -448,6 +455,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0D4915E12AAB16D300C4248E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 887D0B2D1D870D7E009E01F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A02D01C2361520200B49FAE;
+			remoteInfo = IGListDiffKit;
+		};
 		7A02D0B22361546300B49FAE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 887D0B2D1D870D7E009E01F7 /* Project object */;
@@ -507,6 +521,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D4915DC2AAB16D300C4248E /* IGListDiffKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IGListDiffKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13DF01711FA0FD400092A320 /* IGListTestAdapterReorderingDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGListTestAdapterReorderingDataSource.h; sourceTree = "<group>"; };
 		13DF01721FA0FD400092A320 /* IGListTestAdapterReorderingDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IGListTestAdapterReorderingDataSource.m; sourceTree = "<group>"; };
 		13DF01751FA1000E0092A320 /* IGTestReorderableSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGTestReorderableSection.h; sourceTree = "<group>"; };
@@ -765,6 +780,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0D4915D92AAB16D300C4248E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D4915E02AAB16D300C4248E /* IGListDiffKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7A02D01A2361520200B49FAE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1151,6 +1174,7 @@
 				7A02D01D2361520200B49FAE /* IGListDiffKit.framework */,
 				7A02D02B2361525800B49FAE /* IGListDiffKit.framework */,
 				7A02D0382361526600B49FAE /* IGListDiffKit.framework */,
+				0D4915DC2AAB16D300C4248E /* IGListDiffKitTests.xctest */,
 				7A92EA9723A8A42000E5A13D /* IGListSwiftKit.framework */,
 				7A92EAA823A8A50100E5A13D /* IGListSwiftKit.framework */,
 			);
@@ -1444,6 +1468,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		0D4915DB2AAB16D300C4248E /* IGListDiffKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D4915E52AAB16D300C4248E /* Build configuration list for PBXNativeTarget "IGListDiffKitTests" */;
+			buildPhases = (
+				0D4915D82AAB16D300C4248E /* Sources */,
+				0D4915D92AAB16D300C4248E /* Frameworks */,
+				0D4915DA2AAB16D300C4248E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D4915E22AAB16D300C4248E /* PBXTargetDependency */,
+			);
+			name = IGListDiffKitTests;
+			productName = IGListDiffKitTests;
+			productReference = 0D4915DC2AAB16D300C4248E /* IGListDiffKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		7A02D01C2361520200B49FAE /* IGListDiffKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A02D0222361520200B49FAE /* Build configuration list for PBXNativeTarget "IGListDiffKit" */;
@@ -1654,6 +1696,9 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Instagram;
 				TargetAttributes = {
+					0D4915DB2AAB16D300C4248E = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
 					7A02D01C2361520200B49FAE = {
 						CreatedOnToolsVersion = 11.1;
 						ProvisioningStyle = Manual;
@@ -1724,6 +1769,7 @@
 				DD3152661DE227FA00AC9D2C /* IGListKit-macOS */,
 				88DF897B1E010E6A00B1B9B4 /* IGListKit-macOSTests */,
 				7A02D01C2361520200B49FAE /* IGListDiffKit */,
+				0D4915DB2AAB16D300C4248E /* IGListDiffKitTests */,
 				7A02D02A2361525800B49FAE /* IGListDiffKit-tvOS */,
 				7A02D0372361526600B49FAE /* IGListDiffKit-macOS */,
 				7A92EA9623A8A42000E5A13D /* IGListSwiftKit */,
@@ -1733,6 +1779,13 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0D4915DA2AAB16D300C4248E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7A92EA9523A8A42000E5A13D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1818,6 +1871,19 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0D4915D82AAB16D300C4248E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D4915E62AAB170700C4248E /* IGListDiffDescriptionStringTests.m in Sources */,
+				0D4915EB2AAB199600C4248E /* IGListBatchUpdateDataTests.m in Sources */,
+				0D4915E72AAB170700C4248E /* IGListDiffResultTests.m in Sources */,
+				0D4915EA2AAB174900C4248E /* IGTestObject.m in Sources */,
+				0D4915E82AAB170700C4248E /* IGListDiffSwiftTests.swift in Sources */,
+				0D4915E92AAB170700C4248E /* IGListDiffTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7A02D0192361520200B49FAE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2143,6 +2209,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0D4915E22AAB16D300C4248E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A02D01C2361520200B49FAE /* IGListDiffKit */;
+			targetProxy = 0D4915E12AAB16D300C4248E /* PBXContainerItemProxy */;
+		};
 		7A02D0B32361546300B49FAE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7A02D01C2361520200B49FAE /* IGListDiffKit */;
@@ -2186,6 +2257,57 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0D4915E32AAB16D300C4248E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"NS_BLOCK_ASSERTIONS=1",
+				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_SHADOW = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.instagram.IGListDiffKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0D4915E42AAB16D300C4248E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_SHADOW = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.instagram.IGListDiffKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		7A02D0232361520200B49FAE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -3170,6 +3292,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0D4915E52AAB16D300C4248E /* Build configuration list for PBXNativeTarget "IGListDiffKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D4915E32AAB16D300C4248E /* Debug */,
+				0D4915E42AAB16D300C4248E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7A02D0222361520200B49FAE /* Build configuration list for PBXNativeTarget "IGListDiffKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
